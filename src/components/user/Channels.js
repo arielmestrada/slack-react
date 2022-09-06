@@ -29,7 +29,7 @@ export default function Channels({
   };
 
   let searchMember = (member) => {
-    fetch("https://206.189.91.54//api/v1/users", requestGet)
+    fetch("http://206.189.91.54//api/v1/users", requestGet)
       .then((response) => response.text())
       .then((result) => {
         let parse = JSON.parse(result).data;
@@ -42,7 +42,7 @@ export default function Channels({
   };
 
   useEffect(() => {
-    fetch("https://206.189.91.54//api/v1/users", requestGet)
+    fetch("http://206.189.91.54//api/v1/users", requestGet)
       .then((response) => response.text())
       .then((result) => {
         let parse = JSON.parse(result).data;
@@ -71,7 +71,7 @@ export default function Channels({
       redirect: "follow",
     };
 
-    fetch("https://206.189.91.54//api/v1/channel/add_member", requestOptions)
+    fetch("http://206.189.91.54//api/v1/channel/add_member", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         console.log(result);
@@ -96,7 +96,7 @@ export default function Channels({
   };
 
   useEffect(() => {
-    fetch("https://206.189.91.54//api/v1/users", requestGet)
+    fetch("http://206.189.91.54//api/v1/users", requestGet)
       .then((response) => response.text())
       .then((result) => {
         let parse = JSON.parse(result).data;
@@ -199,7 +199,7 @@ export default function Channels({
                     viewBox="0 0 24 24"
                     height="1em"
                     width="1em"
-                    xmlns="https://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path d="M7 10l5 5 5-5z"></path>
