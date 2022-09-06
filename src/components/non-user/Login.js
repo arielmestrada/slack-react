@@ -21,7 +21,7 @@ const Login = ({ setRequiredHeaders }) => {
       },
     };
 
-    fetch("http://206.189.91.54//api/v1/auth/sign_in", requestOptions)
+    fetch("https://206.189.91.54//api/v1/auth/sign_in", requestOptions)
       .then((response) => {
         let headers = {
           accessToken: response.headers.get("access-token"),
